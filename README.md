@@ -21,8 +21,11 @@ Cite the source publication.
 State the licences used which are GPL v3 license used by Ersilia and the license used by the source code, if any exists. Use [this guide]() on how to license new models to be incorporated into Ersilia's model hub 
 
 # History 
-- State the date when the model was downloaded and incorporated into Ersilia.
-- List any essential steps/modifications to the original code
+- Data Preparation:
+  - Removed all smiles that overlap among the classes
+  - Remove salts from molecules using `rdkit.Chem.SaltRemover`
+  - Apply stratified train-test split with 25 percent test data. 
+- Training Models:
 
 # About us
 The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
