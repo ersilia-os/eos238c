@@ -24,7 +24,7 @@ State the licences used which are GPL v3 license used by Ersilia and the license
 - Data Preparation:
   - Remove all smiles that overlap among the classes
   - Remove salts from molecules using `rdkit.Chem.SaltRemover`
-  - Apply stratified train-test split with 25 percent test data. 
+  - Apply stratified train-test split with 20 percent test data. 
 - Training Models:
 
 # About us
