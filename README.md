@@ -28,7 +28,7 @@ The GPL-v3 license applies to all parts of the repository.
 - Training Models:
   - Morgan Binary Classifier from [lazy-qsar](https://github.com/ersilia-os/lazy-qsar) library is used to train models
   - 5-folds Cross-validation is used to validate models
-  - Trained models are kept in [models](https://github.com/ersilia-os/eos238c/tree/main/model/framework/models)
+  - Trained models are kept in [models](https://github.com/ersilia-os/eos238c/tree/main/model/framework/models) folder
 - Model was incorporated in Ersilia on 10/17/2022
 
 # About us
