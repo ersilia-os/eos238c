@@ -1,24 +1,24 @@
-# Model title
+# Therapeutic use prediction based on MeSH medical subheadings
 ## Model identifiers
-- Slug:
-- Ersilia ID: 
-- Tags: 
+- Slug: mesh-therapeutic-use
+- Ersilia ID: eos238c
+- Tags: Therapeutic use, MESH
 
 # Model description
-Short description of the model in one or two sentences.
-- Input:
-- Output: {unit and description of output) 
-- Model type: (Regression or Classification)
-- Training set: (number of compounds and link to the training data)
-- Mode of training: (is it pretrained? that is were the checkpoints downloaded and used to train the model? or is it retrained? that is trained from scratch with an updated data)
+Therapeutic uses expressed as twelve medical subheadings (MeSH) are predicted in a binary classification.
+- Input: SMILES
+- Output: Therapeutic use (Therapeutic use data according to MESH hierarchies in the PubChem database)
+- Model type: Classification
+- Training set: 7005 (https://github.com/jgmeyerucsd/drug-class)
+- Mode of training: In-house Training
 
 # Source code
 Cite the source publication.
 - Code: include link to the source code
-- Checkpoints: include the link to the checkpoints used if model is a pretrained model
+- Checkpoints: N/A
 
 # License
-State the licences used which are GPL v3 license used by Ersilia and the license used by the source code, if any exists. Use [this guide]() on how to license new models to be incorporated into Ersilia's model hub 
+The GPL-v3 license applies to all parts of the repository.
 
 # History 
 - Data Preparation:
@@ -26,6 +26,10 @@ State the licences used which are GPL v3 license used by Ersilia and the license
   - Remove salts from molecules using `rdkit.Chem.SaltRemover`
   - Apply stratified train-test split with 20 percent test data. 
 - Training Models:
+  - Morgan Binary Classifier from [lazy-qsar](https://github.com/ersilia-os/lazy-qsar) library is used to train models
+  - 5-folds Cross-validation is used to validate models
+  - Trained models' parameters are kept in [models](https://github.com/ersilia-os/eos238c/tree/main/model/framework/models)
+Model was incorporated in Ersilia on 10/17/2022
 
 # About us
 The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
