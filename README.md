@@ -29,7 +29,7 @@ The GPL-v3 license applies to all parts of the repository.
   - Morgan Binary Classifier from [lazy-qsar](https://github.com/ersilia-os/lazy-qsar) library is used to train models
   - 5-folds Cross-validation is used to validate models
   - Trained models' parameters are kept in [models](https://github.com/ersilia-os/eos238c/tree/main/model/framework/models)
-Model was incorporated in Ersilia on 10/17/2022
+- Model was incorporated in Ersilia on 10/17/2022
 
 # About us
 The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
