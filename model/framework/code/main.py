@@ -26,7 +26,7 @@ df_results = pd.read_csv(input_file, sep=" ",skiprows=1, header=None, names=['Sm
 input_smiles = df_results['Smiles'].tolist()
 
 for activity in activities:
-    model_path = os.path.join(model_dir, activity+'.pt')
+    model_path = os.path.join(model_dir, activity+'.joblib')
     model = joblib.load(model_path)
     y_hat = model.predict_proba(input_smiles)
     df_results[activity] = y_hat[:,1]
