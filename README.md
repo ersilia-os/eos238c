@@ -11,10 +11,26 @@ Therapeutic uses expressed as twelve medical subheadings (MeSH) are predicted in
 - Model type: Classification
 - Training set: 7005 (https://github.com/jgmeyerucsd/drug-class)
 - Mode of training: In-house Training
+- Validation Summary: 
+
+|Activity  |           CV-1 |  CV-2 |  CV-3  | CV-4 |  CV-5 |  Mean AUROC |
+| -------- | -------------- | ------|  ------|------|-------|-------------|
+|reproductivecontrol  |0.97   |0.93   |0.99   |0.9    |0.98   |0.96      |
+|gastrointestinal     |0.98   |0.92   |0.94   |0.95   |0.93   |0.94      |
+|hematologic          |0.94   |0.87   |0.88   |0.98   |0.97   |0.93      |
+|antineoplastic       |0.98   |0.96   |0.95   |0.97   |0.96   |0.96      |
+|dermatologic         |0.95   |0.84   |0.95   |0.87   |0.88   |0.9       |
+|lipidregulating      |0.93   |0.96   |0.92   |0.84   |0.95   |0.92      |
+|urological           |0.76   |0.74   |0.64   |0.83   |0.8    |0.75      |
+|cns                  |0.97   |0.98   |0.96   |0.97   |0.97   |0.97      |
+|cardio               |0.95   |0.96   |0.95   |0.94   |0.96   |0.95      |
+|antiinfective        |0.98   |0.99   |0.99   |0.95   |0.97   |0.97      |
+|respiratorysystem    |0.88   |0.84   |0.88   |0.93   |0.9    |0.89      |
+|antiinflammatory     |0.91   |0.98   |0.92   |0.98   |0.97   |0.95      |
 
 # Source code
-Cite the source publication.
-- Code: include link to the source code
+Source Publication: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6819987/
+- Code: https://github.com/jgmeyerucsd/drug-class
 - Checkpoints: N/A
 
 # License
