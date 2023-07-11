@@ -23,6 +23,9 @@ Drug function, defined as Medical Subject Headings (MeSH) “therapeutic use” 
 * [Source Code](https://github.com/jgmeyerucsd/drug-class)
 * Ersilia contributor: [Amna-28](https://github.com/Amna-28)
 
+## Ersilia model URLs
+* [GitHub](https://github.com/ersilia-os/eos238c)
+
 ## Citation
 
 If you use this model, please cite the [original authors](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6819987/) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
