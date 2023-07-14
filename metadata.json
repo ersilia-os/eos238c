@@ -26,5 +26,10 @@
     "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6819987/",
     "Source Code": "https://github.com/jgmeyerucsd/drug-class",
     "License": "GPL-3.0",
-    "Contributor": "Amna-28"
+    "Contributor": "Amna-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos238c.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos238c",
+    "Docker Architecture": [
+        "AMD64"
+    ]
 }
