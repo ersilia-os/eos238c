@@ -12,7 +12,7 @@ output_file = sys.argv[2]
 root = os.path.dirname(os.path.abspath(__file__))
 
 # model directory
-model_dir = os.path.abspath(os.path.join(root, "..","..","checkpoints","models"))
+model_dir = os.path.abspath(os.path.join(root, "..","..","checkpoints"))
 
 # parse arguments
 input_file = sys.argv[1]
