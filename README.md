@@ -2,44 +2,87 @@
 
 Drug function, defined as Medical Subject Headings (MeSH) “therapeutic use” is predicted based on the chemical structure. 6955 non-redundant molecules, pertaining to one of the twelve therapeutic use classes selected, were downloaded from PubChem and used to train a binary classifier. The model provides the probability that a molecule has one of the following therapeutic uses: antineoplastic, cardiovascular, central nervous system (CNS), anti-infective, gastrointestinal, anti-inflammatory, dermatological, hematologic, lipid regulating, reproductive control, respiratory system, urological.
 
-## Identifiers
+This model was incorporated on 2022-10-17.
 
-* EOS model ID: `eos238c`
-* Slug: `mesh-therapeutic-use`
+## Information
+### Identifiers
+- **Ersilia Identifier:** `eos238c`
+- **Slug:** `mesh-therapeutic-use`
 
-## Characteristics
+### Domain
+- **Task:** `Annotation`
+- **Subtask:** `Activity prediction`
+- **Biomedical Area:** `Any`
+- **Target Organism:** `Not Applicable`
+- **Tags:** `Therapeutic indication`
 
-* Input: `Compound`
-* Input Shape: `Single`
-* Task: `Classification`
-* Output: `Probability`
-* Output Type: `Float`
-* Output Shape: `List`
-* Interpretation: Probability that the molecule belongs to each therapeutic use specified.
+### Input
+- **Input:** `Compound`
+- **Input Dimension:** `1`
 
-## References
+### Output
+- **Output Dimension:** `12`
+- **Output Consistency:** `Fixed`
+- **Interpretation:** Probability that the molecule belongs to each therapeutic use specified.
 
-* [Publication](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6819987/)
-* [Source Code](https://github.com/jgmeyerucsd/drug-class)
-* Ersilia contributor: [Amna-28](https://github.com/Amna-28)
+Below are the **Output Columns** of the model:
+| Name | Type | Direction | Description |
+|------|------|-----------|-------------|
+| antiinfective_use | float | high | Probability that the molecule has an effect on the antiinfective therapeutic area as defined by MeSH |
+| antiinflammatory_use | float | high | Probability that the molecule has an effect on the antiinflamatory therapeutic area as defined by MeSH |
+| antineoplastic_use | float | high | Probability that the molecule has an effect on the antneoplastic therapeutic area as defined by MeSH |
+| cardiovascular_use | float | high | Probability that the molecule has an effect on the cardiovascular therapeutic area as defined by MeSH |
+| central_nervous_system_use | float | high | Probability that the molecule has an effect on the central nervous system therapeutic area as defined by MeSH |
+| dermatologic_use | float | high | Probability that the molecule has an effect on the dermatologic therapeutic area as defined by MeSH |
+| gastrointestinal_use | float | high | Probability that the molecule has an effect on the gastrointestinal therapeutic area as defined by MeSH |
+| hematologic_use | float | high | Probability that the molecule has an effect on the hematologic therapeutic area as defined by MeSH |
+| lipid_regulating_use | float | high | Probability that the molecule has an effect on the lipid regulating therapeutic area as defined by MeSH |
+| reproductive_control_use | float | high | Probability that the molecule has an effect on the reproductive control therapeutic area as defined by MeSH |
 
-## Ersilia model URLs
-* [GitHub](https://github.com/ersilia-os/eos238c)
-* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos238c.zip)
-* [DockerHub](https://hub.docker.com/r/ersiliaos/eos238c) (AMD64)
+_10 of 12 columns are shown_
+### Source and Deployment
+- **Source:** `Local`
+- **Source Type:** `External`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos238c](https://hub.docker.com/r/ersiliaos/eos238c)
+- **Docker Architecture:** `AMD64`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos238c.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos238c.zip)
 
-## Citation
+### Resource Consumption
 
-If you use this model, please cite the [original authors](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6819987/) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
 
-## License
+### References
+- **Source Code**: [https://github.com/jgmeyerucsd/drug-class](https://github.com/jgmeyerucsd/drug-class)
+- **Publication**: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6819987/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6819987/)
+- **Publication Type:** `Peer reviewed`
+- **Publication Year:** `2019`
+- **Ersilia Contributor:** [Amna-28](https://github.com/Amna-28)
 
-This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a GPL-3.0 license.
+### License
+This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [GPL-3.0-only](LICENSE) license.
 
-Notice: Ersilia grants access to these models 'as is' provided by the original authors, please refer to the original code repository and/or publication if you use the model in your research.
+**Notice**: Ersilia grants access to models _as is_, directly from the original authors, please refer to the original code repository and/or publication if you use the model in your research.
 
-## About Us
 
-The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
+## Use
+To use this model locally, you need to have the [Ersilia CLI](https://github.com/ersilia-os/ersilia) installed.
+The model can be **fetched** using the following command:
+```bash
+# fetch model from the Ersilia Model Hub
+ersilia fetch eos238c
+```
+Then, you can **serve**, **run** and **close** the model as follows:
+```bash
+# serve the model
+ersilia serve eos238c
+# generate an example file
+ersilia example -n 3 -f my_input.csv
+# run the model
+ersilia run -i my_input.csv -o my_output.csv
+# close the model
+ersilia close
+```
 
-[Help us](https://www.ersilia.io/donate) achieve our mission!
+## About Ersilia
+The [Ersilia Open Source Initiative](https://ersilia.io) is a tech non-profit organization fueling sustainable research in the Global South.
+Please [cite](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff) the Ersilia Model Hub if you've found this model to be useful. Always [let us know](https://github.com/ersilia-os/ersilia/issues) if you experience any issues while trying to run it.
+If you want to contribute to our mission, consider [donating](https://www.ersilia.io/donate) to Ersilia!
