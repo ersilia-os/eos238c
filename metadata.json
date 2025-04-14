@@ -4,32 +4,43 @@
     "Status": "Ready",
     "Title": "MeSH therapeutic use based on chemical structure",
     "Description": "Drug function, defined as Medical Subject Headings (MeSH) \u201ctherapeutic use\u201d is predicted based on the chemical structure. 6955 non-redundant molecules, pertaining to one of the twelve therapeutic use classes selected, were downloaded from PubChem and used to train a binary classifier. The model provides the probability that a molecule has one of the following therapeutic uses: antineoplastic, cardiovascular, central nervous system (CNS), anti-infective, gastrointestinal, anti-inflammatory, dermatological, hematologic, lipid regulating, reproductive control, respiratory system, urological.\n",
-    "Mode": "In-house",
+    "Source": "Local",
+    "Source Type": "External",
     "Input": [
         "Compound"
     ],
     "Input Shape": "Single",
-    "Task": [
-        "Classification"
+    "Input Dimension": 1,
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
+    "Biomedical Area": [
+        "Any"
+    ],
+    "Target Organism": [
+        "Not Applicable"
     ],
     "Output": [
         "Probability"
     ],
-    "Output Type": [
-        "Float"
-    ],
-    "Output Shape": "List",
+    "Output Dimension": 12,
+    "Output Consistency": "Fixed",
     "Interpretation": "Probability that the molecule belongs to each therapeutic use specified.",
     "Tag": [
         "Therapeutic indication"
     ],
     "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6819987/",
+    "Publication Type": "Peer reviewed",
+    "Publication Year": 2019,
     "Source Code": "https://github.com/jgmeyerucsd/drug-class",
-    "License": "GPL-3.0",
+    "License": "GPL-3.0-only",
     "Contributor": "Amna-28",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos238c.zip",
+    "Incorporation Date": "2022-10-17",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos238c",
     "Docker Architecture": [
         "AMD64"
+    ],
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos238c.zip",
+    "Deployment": [
+        "Local"
     ]
 }
