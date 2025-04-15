@@ -2,7 +2,7 @@ name: Test model image
 
 on:
   workflow_run:
-    workflows: ["Test and upload model"]
+    workflows: ["Build dev image"]
     types:
       - completed
   workflow_dispatch:
