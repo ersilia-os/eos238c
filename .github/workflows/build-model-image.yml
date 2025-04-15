@@ -8,8 +8,8 @@ on:
   workflow_dispatch:
 
 jobs:
+  # Try to build the Ersilia Pack
   upload-ersilia-pack:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     uses: ersilia-os/ersilia-model-workflows/.github/workflows/upload-ersilia-pack.yml@main
     with:
       repo_name: ${{ github.event.repository.name }}
@@ -17,10 +17,10 @@ jobs:
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
       DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-  # BentoML Multistage Build (runs if Ersilia Pack fails)
+  # Fallback to BentoML multistage build if Ersilia Pack fails
   upload-bentoml-multistage:
     needs: upload-ersilia-pack
-    if: ${{ needs.upload-ersilia-pack.result != 'success' }}
+    if: ${{ needs.upload-ersilia-pack.result == 'failure' }}
     uses: ersilia-os/ersilia-model-workflows/.github/workflows/upload-bentoml.yml@main
     with:
       repo_name: ${{ github.event.repository.name }}
@@ -29,7 +29,7 @@ jobs:
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
       DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-  # BentoML Legacy Build (runs only if both previous jobs fail)
+  # Final fallback to legacy build if both pack and multistage fail
   upload-bentoml-legacy:
     needs: [upload-ersilia-pack, upload-bentoml-multistage]
     if: ${{ needs.upload-ersilia-pack.result == 'failure' && needs.upload-bentoml-multistage.result == 'failure' }}
