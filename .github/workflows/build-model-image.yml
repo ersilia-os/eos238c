@@ -10,12 +10,10 @@ on:
 jobs:
   # Try to build the Ersilia Pack
   upload-ersilia-pack:
-    uses: ersilia-os/ersilia-model-workflows/.github/workflows/upload-ersilia-pack.yml@main
-    with:
-      repo_name: ${{ github.event.repository.name }}
-    secrets:
-      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-      DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simulate failure
+        run: exit 1
 
   # Fallback to BentoML multistage build if Ersilia Pack fails
   upload-bentoml-multistage:
