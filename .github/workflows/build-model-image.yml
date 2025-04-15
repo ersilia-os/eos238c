@@ -20,7 +20,7 @@ jobs:
   # BentoML Multistage Build (runs if Ersilia Pack fails)
   upload-bentoml-multistage:
     needs: upload-ersilia-pack
-    if: ${{ needs.upload-ersilia-pack.result == 'failure' }}
+    if: ${{ needs.upload-ersilia-pack.result != 'success' }}
     uses: ersilia-os/ersilia-model-workflows/.github/workflows/upload-bentoml.yml@main
     with:
       repo_name: ${{ github.event.repository.name }}
