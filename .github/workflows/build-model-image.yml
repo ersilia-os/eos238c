@@ -20,7 +20,7 @@ jobs:
   # Fallback to BentoML multistage build if Ersilia Pack fails
   upload-bentoml-multistage:
     needs: upload-ersilia-pack
-    if: ${{ needs.upload-ersilia-pack.result == 'failure' }}
+    if: ${{ failure() && needs.upload-ersilia-pack.result == 'failure' }}
     uses: ersilia-os/ersilia-model-workflows/.github/workflows/upload-bentoml.yml@main
     with:
       repo_name: ${{ github.event.repository.name }}
@@ -32,7 +32,7 @@ jobs:
   # Final fallback to legacy build if both pack and multistage fail
   upload-bentoml-legacy:
     needs: [upload-ersilia-pack, upload-bentoml-multistage]
-    if: ${{ needs.upload-ersilia-pack.result == 'failure' && needs.upload-bentoml-multistage.result == 'failure' }}
+    if: ${{ failure() && needs.upload-ersilia-pack.result == 'failure' && needs.upload-bentoml-multistage.result == 'failure' }}
     uses: ersilia-os/ersilia-model-workflows/.github/workflows/upload-bentoml.yml@main
     with:
       repo_name: ${{ github.event.repository.name }}
