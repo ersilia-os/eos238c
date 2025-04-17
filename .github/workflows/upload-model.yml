@@ -20,7 +20,7 @@ jobs:
 
   upload-model-to-s3:
     needs: test-model-source
-    if: ${{ needs.test-model-source.result == 'success' }}}}
+    if: ${{ needs.test-model-source.result == 'success' }}
     uses: ersilia-os/ersilia-model-workflows/.github/workflows/upload-model-to-s3.yml@main
     with:
       repo_name: ${{ github.event.repository.name }}
