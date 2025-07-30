@@ -4,6 +4,7 @@ Drug function, defined as Medical Subject Headings (MeSH) “therapeutic use” 
 
 This model was incorporated on 2022-10-12.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos238c`
@@ -13,7 +14,7 @@ This model was incorporated on 2022-10-12.
 - **Task:** `Annotation`
 - **Subtask:** `Activity prediction`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Therapeutic indication`
 
 ### Input
@@ -28,16 +29,16 @@ This model was incorporated on 2022-10-12.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| antiinfective_use | float | high | Probability that the molecule has an effect on the antiinfective therapeutic area as defined by MeSH |
-| antiinflammatory_use | float | high | Probability that the molecule has an effect on the antiinflamatory therapeutic area as defined by MeSH |
-| antineoplastic_use | float | high | Probability that the molecule has an effect on the antneoplastic therapeutic area as defined by MeSH |
-| cardiovascular_use | float | high | Probability that the molecule has an effect on the cardiovascular therapeutic area as defined by MeSH |
-| central_nervous_system_use | float | high | Probability that the molecule has an effect on the central nervous system therapeutic area as defined by MeSH |
-| dermatologic_use | float | high | Probability that the molecule has an effect on the dermatologic therapeutic area as defined by MeSH |
-| gastrointestinal_use | float | high | Probability that the molecule has an effect on the gastrointestinal therapeutic area as defined by MeSH |
-| hematologic_use | float | high | Probability that the molecule has an effect on the hematologic therapeutic area as defined by MeSH |
-| lipid_regulating_use | float | high | Probability that the molecule has an effect on the lipid regulating therapeutic area as defined by MeSH |
-| reproductive_control_use | float | high | Probability that the molecule has an effect on the reproductive control therapeutic area as defined by MeSH |
+| antiinfective | float | high | Probability that the molecule has an effect on the antiinfective therapeutic area as defined by MeSH |
+| antiinflammatory | float | high | Probability that the molecule has an effect on the antiinflamatory therapeutic area as defined by MeSH |
+| antineoplastic | float | high | Probability that the molecule has an effect on the antneoplastic therapeutic area as defined by MeSH |
+| cardio | float | high | Probability that the molecule has an effect on the cardiovascular therapeutic area as defined by MeSH |
+| cns | float | high | Probability that the molecule has an effect on the central nervous system therapeutic area as defined by MeSH |
+| dermatologic | float | high | Probability that the molecule has an effect on the dermatologic therapeutic area as defined by MeSH |
+| gastrointestinal | float | high | Probability that the molecule has an effect on the gastrointestinal therapeutic area as defined by MeSH |
+| hematologic | float | high | Probability that the molecule has an effect on the hematologic therapeutic area as defined by MeSH |
+| lipidregulating | float | high | Probability that the molecule has an effect on the lipid regulating therapeutic area as defined by MeSH |
+| reproductivecontrol | float | high | Probability that the molecule has an effect on the reproductive control therapeutic area as defined by MeSH |
 
 _10 of 12 columns are shown_
 ### Source and Deployment
