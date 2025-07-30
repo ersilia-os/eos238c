@@ -2,7 +2,7 @@
 import os
 import sys
 import pandas as pd
-import joblib
+import lazyqsar as lq
 
 # parse arguments
 input_file = sys.argv[1]
@@ -18,17 +18,18 @@ model_dir = os.path.abspath(os.path.join(root, "..","..","checkpoints"))
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
-activities = ['antiinfective_use','antiinflammatory_use','antineoplastic_use','cardiovascular_use',
-              'central_nervous_system_use','dermatologic_use','gastrointestinal_use','hematologic_use',
-              'lipid_regulating_use','reproductive_control_use','respiratory_system_use','urological_use']
+activities = ['antiinfective','antiinflammatory','antineoplastic','cardio',
+              'cns','dermatologic','gastrointestinal','hematologic',
+              'lipidregulating','reproductivecontrol','respiratorysystem','urological']
               
 df_results = pd.read_csv(input_file, sep=" ",skiprows=1, header=None, names=['Smiles'])
 input_smiles = df_results['Smiles'].tolist()
 
 for activity in activities:
-    model_path = os.path.join(model_dir, activity+'.joblib')
-    model = joblib.load(model_path)
+    model_path = os.path.join(model_dir, activity)
+    model = lq.LazyBinaryQSAR.load_model(os.path.join(model_path))
     y_hat = model.predict_proba(input_smiles)
     df_results[activity] = y_hat[:,1]
     
+df_results.drop(columns='Smiles', inplace=True)
 df_results.to_csv(output_file,index=False)

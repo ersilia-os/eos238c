@@ -1,13 +1,13 @@
 name,type,direction,description
-antiinfective_use,float,high,Probability that the molecule has an effect on the antiinfective therapeutic area as defined by MeSH
-antiinflammatory_use,float,high,Probability that the molecule has an effect on the antiinflamatory therapeutic area as defined by MeSH
-antineoplastic_use,float,high,Probability that the molecule has an effect on the antneoplastic therapeutic area as defined by MeSH
-cardiovascular_use,float,high,Probability that the molecule has an effect on the cardiovascular therapeutic area as defined by MeSH
-central_nervous_system_use,float,high,Probability that the molecule has an effect on the central nervous system therapeutic area as defined by MeSH
-dermatologic_use,float,high,Probability that the molecule has an effect on the dermatologic therapeutic area as defined by MeSH
-gastrointestinal_use,float,high,Probability that the molecule has an effect on the gastrointestinal therapeutic area as defined by MeSH
-hematologic_use,float,high,Probability that the molecule has an effect on the hematologic therapeutic area as defined by MeSH
-lipid_regulating_use,float,high,Probability that the molecule has an effect on the lipid regulating therapeutic area as defined by MeSH
-reproductive_control_use,float,high,Probability that the molecule has an effect on the reproductive control therapeutic area as defined by MeSH
-respiratory_system_use,float,high,Probability that the molecule has an effect on the respiratory system therapeutic area as defined by MeSH
-urological_use,float,high,Probability that the molecule has an effect on the urological therapeutic area as defined by MeSH
+antiinfective,float,high,Probability that the molecule has an effect on the antiinfective therapeutic area as defined by MeSH
+antiinflammatory,float,high,Probability that the molecule has an effect on the antiinflamatory therapeutic area as defined by MeSH
+antineoplastic,float,high,Probability that the molecule has an effect on the antneoplastic therapeutic area as defined by MeSH
+cardio,float,high,Probability that the molecule has an effect on the cardiovascular therapeutic area as defined by MeSH
+cns,float,high,Probability that the molecule has an effect on the central nervous system therapeutic area as defined by MeSH
+dermatologic,float,high,Probability that the molecule has an effect on the dermatologic therapeutic area as defined by MeSH
+gastrointestinal,float,high,Probability that the molecule has an effect on the gastrointestinal therapeutic area as defined by MeSH
+hematologic,float,high,Probability that the molecule has an effect on the hematologic therapeutic area as defined by MeSH
+lipidregulating,float,high,Probability that the molecule has an effect on the lipid regulating therapeutic area as defined by MeSH
+reproductivecontrol,float,high,Probability that the molecule has an effect on the reproductive control therapeutic area as defined by MeSH
+respiratorysystem,float,high,Probability that the molecule has an effect on the respiratory system therapeutic area as defined by MeSH
+urological,float,high,Probability that the molecule has an effect on the urological therapeutic area as defined by MeSH

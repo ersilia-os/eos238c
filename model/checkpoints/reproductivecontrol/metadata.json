@@ -1,0 +1,10 @@
+{
+    "num_partitions": 1,
+    "pca": false,
+    "random_state": 42,
+    "base_test_size": 0.25,
+    "base_num_splits": 3,
+    "base_num_trials": 20,
+    "base_timeout": 120,
+    "fit_time": 426.7854788303375
+}
