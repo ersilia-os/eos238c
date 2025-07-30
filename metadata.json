@@ -15,7 +15,6 @@
         "Compound"
     ],
     "Input Dimension": 1,
-    "Input Shape": "Single",
     "Output": [
         "Score"
     ],
@@ -44,5 +43,6 @@
         "AMD64"
     ],
     "Model Size": 28.0,
-    "Environment Size": 1421.0
+    "Environment Size": 1421.0,
+    "Input Shape": "Single"
 }
