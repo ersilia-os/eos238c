@@ -37,12 +37,20 @@
     "License": "GPL-3.0-only",
     "Contributor": "Amna-28",
     "Incorporation Date": "2022-10-12",
+    "Last Packaging Date": "2025-07-30",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos238c.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos238c",
     "Docker Architecture": [
-        "AMD64"
+        "AMD64",
+        "ARM64"
     ],
     "Model Size": 187.0,
     "Environment Size": 6533.0,
+    "Image Size": 6770.22,
+    "Computational Performance 1": 54.29,
+    "Computational Performance 2": 40.78,
+    "Computational Performance 3": 78.03,
+    "Computational Performance 4": 379.97,
+    "Computational Performance 5": 1731.27,
     "Input Shape": "Single"
 }
