@@ -17,7 +17,7 @@
     "Input Dimension": 1,
     "Input Shape": "Single",
     "Output": [
-        "Probability"
+        "Score"
     ],
     "Output Dimension": 12,
     "Output Consistency": "Fixed",
@@ -29,7 +29,7 @@
         "Any"
     ],
     "Target Organism": [
-        "Not Applicable"
+        "Any"
     ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2019,
