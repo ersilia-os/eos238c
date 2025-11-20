@@ -8,7 +8,7 @@
         "Local"
     ],
     "Source": "Local",
-    "Source Type": "External",
+    "Source Type": "Replicated",
     "Task": "Annotation",
     "Subtask": "Activity prediction",
     "Input": [
