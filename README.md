@@ -2,7 +2,7 @@
 
 Drug function, defined as Medical Subject Headings (MeSH) “therapeutic use” is predicted based on the chemical structure. 6955 non-redundant molecules, pertaining to one of the twelve therapeutic use classes selected, were downloaded from PubChem and used to train a binary classifier. The model provides the probability that a molecule has one of the following therapeutic uses: antineoplastic, cardiovascular, central nervous system (CNS), anti-infective, gastrointestinal, anti-inflammatory, dermatological, hematologic, lipid regulating, reproductive control, respiratory system, urological.
 
-This model was incorporated on 2022-10-12.Last packaged on 2025-07-30.
+This model was incorporated on 2022-10-12.Last packaged on 2025-11-22.
 
 ## Information
 ### Identifiers
@@ -50,12 +50,12 @@ _10 of 12 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `129`
 - **Environment Size (Mb):** `7610`
-- **Image Size (Mb):** `6770.22`
+- **Image Size (Mb):** `7646.56`
 
 **Computational Performance (seconds):**
-- 10 inputs: `54.29`
-- 100 inputs: `78.03`
-- 10000 inputs: `1731.27`
+- 10 inputs: `37.13`
+- 100 inputs: `63.13`
+- 10000 inputs: `-1`
 
 ### References
 - **Source Code**: [https://github.com/jgmeyerucsd/drug-class](https://github.com/jgmeyerucsd/drug-class)
