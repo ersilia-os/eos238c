@@ -42,7 +42,7 @@ Below are the **Output Columns** of the model:
 _10 of 12 columns are shown_
 ### Source and Deployment
 - **Source:** `Local`
-- **Source Type:** `External`
+- **Source Type:** `Replicated`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos238c](https://hub.docker.com/r/ersiliaos/eos238c)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos238c.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos238c.zip)
