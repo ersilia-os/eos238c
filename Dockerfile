@@ -1,7 +1,7 @@
-FROM bentoml/model-server:0.11.0-py311
+FROM bentoml/model-server:0.11.0-py312
 MAINTAINER ersilia
 
-RUN pip install git+https://github.com/ersilia-os/lazy-qsar.git@main#egg=lazyqsar[descriptors]
+RUN pip install lazyqsar[descriptors]==2.1.1
 
 WORKDIR /repo
 COPY . /repo
