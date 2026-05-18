@@ -59,7 +59,7 @@ _10 of 12 columns are shown_
 
 ### References
 - **Source Code**: [https://github.com/jgmeyerucsd/drug-class](https://github.com/jgmeyerucsd/drug-class)
-- **Publication**: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6819987/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6819987/)
+- **Publication**: [https://doi.org/10.1021/acs.jcim.9b00236](https://doi.org/10.1021/acs.jcim.9b00236)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2019`
 - **Ersilia Contributor:** [Amna-28](https://github.com/Amna-28)
