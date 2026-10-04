@@ -1,6 +1,6 @@
 # MeSH therapeutic use based on chemical structure
 
-Drug function, defined as Medical Subject Headings (MeSH) “therapeutic use” is predicted based on the chemical structure. 6955 non-redundant molecules, pertaining to one of the twelve therapeutic use classes selected, were downloaded from PubChem and used to train a binary classifier. The model provides the probability that a molecule has one of the following therapeutic uses: antineoplastic, cardiovascular, central nervous system (CNS), anti-infective, gastrointestinal, anti-inflammatory, dermatological, hematologic, lipid regulating, reproductive control, respiratory system, urological.
+Assigns a molecule to twelve broad therapeutic categories drawn from MeSH, inferring likely clinical use straight from structure. Meyer and colleagues trained convolutional neural networks and random forests on drugs annotated with their MeSH therapeutic classes, showing that chemical structure alone carries substantial signal about function. Ersilia provides a replicated version built from the published approach. Categories are broad and not mutually exclusive, so several may score highly for one compound.
 
 This model was incorporated on 2022-10-12.Last packaged on 2025-11-22.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2022-10-12.Last packaged on 2025-11-22.
 ### Output
 - **Output Dimension:** `12`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability that the molecule belongs to each therapeutic use specified.
+- **Interpretation:** Probability that the compound belongs to each of twelve MeSH therapeutic categories.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
