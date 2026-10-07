@@ -1,6 +1,6 @@
 # MeSH therapeutic use based on chemical structure
 
-Assigns a molecule to twelve broad therapeutic categories drawn from MeSH, inferring likely clinical use straight from structure. Meyer and colleagues trained convolutional neural networks and random forests on drugs annotated with their MeSH therapeutic classes, showing that chemical structure alone carries substantial signal about function. Ersilia provides a replicated version built from the published approach. Categories are broad and not mutually exclusive, so several may score highly for one compound.
+Assigns a molecule to twelve broad therapeutic categories taken from the MeSH therapeutic use vocabulary, inferring likely clinical purpose straight from structure. Meyer and colleagues gathered 6955 PubChem compounds each falling in exactly one of the twelve classes, reaching 83 to 88 percent accuracy with convolutional networks on molecule images and random forests on Morgan fingerprints. Ersilia replicates the task with twelve independent binary classifiers, so several categories can score highly for one compound even though the training labels were exclusive.
 
 This model was incorporated on 2022-10-12.Last packaged on 2025-11-22.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2022-10-12.Last packaged on 2025-11-22.
 ### Output
 - **Output Dimension:** `12`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability that the compound belongs to each of twelve MeSH therapeutic categories.
+- **Interpretation:** Probability of belonging to each of twelve MeSH therapeutic use classes, scored by twelve independent classifiers.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
