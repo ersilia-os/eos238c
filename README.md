@@ -2,7 +2,7 @@
 
 Assigns a molecule to twelve broad therapeutic categories taken from the MeSH therapeutic use vocabulary, inferring likely clinical purpose straight from structure. Meyer and colleagues gathered 6955 PubChem compounds each falling in exactly one of the twelve classes, reaching 83 to 88 percent accuracy with convolutional networks on molecule images and random forests on Morgan fingerprints. Ersilia replicates the task with twelve independent binary classifiers, so several categories can score highly for one compound even though the training labels were exclusive.
 
-This model was incorporated on 2022-10-12.Last packaged on 2025-11-22.
+This model was incorporated on 2022-10-12.Last packaged on 2026-10-28.
 
 ## Information
 ### Identifiers
@@ -50,12 +50,12 @@ _10 of 12 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `106`
 - **Environment Size (Mb):** `7552`
-- **Image Size (Mb):** `7646.56`
+- **Image Size (Mb):** `7584`
 
 **Computational Performance (seconds):**
-- 10 inputs: `37.13`
-- 100 inputs: `63.13`
-- 10000 inputs: `-1`
+- 10 inputs: `70.76`
+- 100 inputs: `70.21`
+- 10000 inputs: `1602.39`
 
 ### References
 - **Source Code**: [https://github.com/jgmeyerucsd/drug-class](https://github.com/jgmeyerucsd/drug-class)
