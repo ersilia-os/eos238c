@@ -1,0 +1,5 @@
+python: "3.12"
+commands:
+    - ["pip", "lazyqsar[descriptors]", "2.1.1"]
+    - ["pip", "chemprop", "2.2.0"]
+    - ["pip", "rdkit", "2025.9.1"]
