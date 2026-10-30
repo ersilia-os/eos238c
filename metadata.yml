@@ -39,7 +39,7 @@ License: GPL-3.0-only
 Contributor: Amna-28
 Incorporation Date: '2022-10-12'
 Last Packaging Date: '2026-10-28'
-Release: v2.0.0
+Release: v2.1.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos238c.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos238c
 Docker Architecture:
