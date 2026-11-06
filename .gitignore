@@ -128,3 +128,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 /data.h5
+
+# fit/ lives in eosvc; keep only the folder skeleton in git
+model/framework/fit/**
+!model/framework/fit/**/
+!model/framework/fit/**/.gitkeep
+!model/framework/fit/README.md
+.eosvc/
