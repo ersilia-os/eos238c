@@ -23,8 +23,9 @@ Output:
   - Score
 Output Dimension: 12
 Output Consistency: Fixed
-Interpretation: Probability of belonging to each of twelve MeSH therapeutic use 
-  classes, scored by twelve independent classifiers.
+Interpretation: Rank scores for twelve MeSH therapeutic use classes from twelve
+  independent classifiers, calibrated against the Ersilia reference library of
+  50K compounds, where 0.65 beats 99% of it.
 Tag:
   - Therapeutic indication
 Biomedical Area:

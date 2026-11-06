@@ -1,13 +1,13 @@
 name,type,direction,description
-antiinfective,float,high,Probability that the molecule has an effect on the antiinfective therapeutic area as defined by MeSH
-antiinflammatory,float,high,Probability that the molecule has an effect on the antiinflamatory therapeutic area as defined by MeSH
-antineoplastic,float,high,Probability that the molecule has an effect on the antneoplastic therapeutic area as defined by MeSH
-cardio,float,high,Probability that the molecule has an effect on the cardiovascular therapeutic area as defined by MeSH
-cns,float,high,Probability that the molecule has an effect on the central nervous system therapeutic area as defined by MeSH
-dermatologic,float,high,Probability that the molecule has an effect on the dermatologic therapeutic area as defined by MeSH
-gastrointestinal,float,high,Probability that the molecule has an effect on the gastrointestinal therapeutic area as defined by MeSH
-hematologic,float,high,Probability that the molecule has an effect on the hematologic therapeutic area as defined by MeSH
-lipidregulating,float,high,Probability that the molecule has an effect on the lipid regulating therapeutic area as defined by MeSH
-reproductivecontrol,float,high,Probability that the molecule has an effect on the reproductive control therapeutic area as defined by MeSH
-respiratorysystem,float,high,Probability that the molecule has an effect on the respiratory system therapeutic area as defined by MeSH
-urological,float,high,Probability that the molecule has an effect on the urological therapeutic area as defined by MeSH
+antiinfective_rank,float,high,Rank score of how likely the compound is to belong to the anti-infective therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.
+antiinflammatory_rank,float,high,Rank score of how likely the compound is to belong to the anti-inflammatory therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.
+antineoplastic_rank,float,high,Rank score of how likely the compound is to belong to the antineoplastic therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.
+cardio_rank,float,high,Rank score of how likely the compound is to belong to the cardiovascular therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.
+cns_rank,float,high,Rank score of how likely the compound is to belong to the central nervous system therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.
+dermatologic_rank,float,high,Rank score of how likely the compound is to belong to the dermatologic therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.
+gastrointestinal_rank,float,high,Rank score of how likely the compound is to belong to the gastrointestinal therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.
+hematologic_rank,float,high,Rank score of how likely the compound is to belong to the hematologic therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.
+lipidregulating_rank,float,high,Rank score of how likely the compound is to belong to the lipid regulating therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.
+reproductivecontrol_rank,float,high,Rank score of how likely the compound is to belong to the reproductive control therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.
+respiratorysystem_rank,float,high,Rank score of how likely the compound is to belong to the respiratory system therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.
+urological_rank,float,high,Rank score of how likely the compound is to belong to the urological therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.
