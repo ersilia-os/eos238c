@@ -2,7 +2,8 @@
 
 Assigns a molecule to twelve broad therapeutic categories taken from the MeSH therapeutic use vocabulary, inferring likely clinical purpose straight from structure. Meyer and colleagues gathered 6955 PubChem compounds each falling in exactly one of the twelve classes, reaching 83 to 88 percent accuracy with convolutional networks on molecule images and random forests on Morgan fingerprints. Ersilia replicates the task with twelve independent binary classifiers, so several categories can score highly for one compound even though the training labels were exclusive.
 
-This model was incorporated on 2022-10-12.Last packaged on 2026-10-28.
+This model was incorporated on 2022-10-12.
+Last packaged on 2026-10-28.
 
 ## Information
 ### Identifiers
@@ -23,21 +24,21 @@ This model was incorporated on 2022-10-12.Last packaged on 2026-10-28.
 ### Output
 - **Output Dimension:** `12`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of belonging to each of twelve MeSH therapeutic use classes, scored by twelve independent classifiers.
+- **Interpretation:** Rank scores for twelve MeSH therapeutic use classes from twelve independent classifiers, calibrated against the Ersilia reference library of 50K compounds, where 0.65 beats 99% of it.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| antiinfective | float | high | Probability that the molecule has an effect on the antiinfective therapeutic area as defined by MeSH |
-| antiinflammatory | float | high | Probability that the molecule has an effect on the antiinflamatory therapeutic area as defined by MeSH |
-| antineoplastic | float | high | Probability that the molecule has an effect on the antneoplastic therapeutic area as defined by MeSH |
-| cardio | float | high | Probability that the molecule has an effect on the cardiovascular therapeutic area as defined by MeSH |
-| cns | float | high | Probability that the molecule has an effect on the central nervous system therapeutic area as defined by MeSH |
-| dermatologic | float | high | Probability that the molecule has an effect on the dermatologic therapeutic area as defined by MeSH |
-| gastrointestinal | float | high | Probability that the molecule has an effect on the gastrointestinal therapeutic area as defined by MeSH |
-| hematologic | float | high | Probability that the molecule has an effect on the hematologic therapeutic area as defined by MeSH |
-| lipidregulating | float | high | Probability that the molecule has an effect on the lipid regulating therapeutic area as defined by MeSH |
-| reproductivecontrol | float | high | Probability that the molecule has an effect on the reproductive control therapeutic area as defined by MeSH |
+| antiinfective_rank | float | high | Rank score of how likely the compound is to belong to the anti-infective therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| antiinflammatory_rank | float | high | Rank score of how likely the compound is to belong to the anti-inflammatory therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| antineoplastic_rank | float | high | Rank score of how likely the compound is to belong to the antineoplastic therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| cardio_rank | float | high | Rank score of how likely the compound is to belong to the cardiovascular therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| cns_rank | float | high | Rank score of how likely the compound is to belong to the central nervous system therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| dermatologic_rank | float | high | Rank score of how likely the compound is to belong to the dermatologic therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| gastrointestinal_rank | float | high | Rank score of how likely the compound is to belong to the gastrointestinal therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| hematologic_rank | float | high | Rank score of how likely the compound is to belong to the hematologic therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| lipidregulating_rank | float | high | Rank score of how likely the compound is to belong to the lipid regulating therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| reproductivecontrol_rank | float | high | Rank score of how likely the compound is to belong to the reproductive control therapeutic use class as defined by MeSH. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
 
 _10 of 12 columns are shown_
 ### Source and Deployment
