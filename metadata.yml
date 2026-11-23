@@ -46,7 +46,7 @@ DockerHub: https://hub.docker.com/r/ersiliaos/eos238c
 Docker Architecture:
   - AMD64
   - ARM64
-Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos238c_v3.sif
+Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos238c_v4.sif
 Model Size: 277.0
 Environment Size: 6954.0
 Image Size: 3327.81
