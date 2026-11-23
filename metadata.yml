@@ -2,13 +2,13 @@ Identifier: eos238c
 Slug: mesh-therapeutic-use
 Status: Ready
 Title: MeSH therapeutic use based on chemical structure
-Description: Assigns a molecule to twelve broad therapeutic categories from the
-  MeSH therapeutic use vocabulary, inferring likely clinical purpose from
-  structure. Meyer and colleagues gathered 6,955 PubChem compounds, each in
-  exactly one class. Ersilia replicates the task with twelve independent
+Description: Assigns a molecule to twelve broad therapeutic categories from the 
+  MeSH therapeutic use vocabulary, inferring likely clinical purpose from 
+  structure. Meyer and colleagues gathered 6,955 PubChem compounds, each in 
+  exactly one class. Ersilia replicates the task with twelve independent 
   LazyQSAR classifiers trained on 6,948 of them, so several categories can score
-  highly for one compound. Five-fold out-of-fold AUROC ranges from 0.87 for
-  urological agents, with only 26 actives, to 0.98 for anti-infective,
+  highly for one compound. Five-fold out-of-fold AUROC ranges from 0.87 for 
+  urological agents, with only 26 actives, to 0.98 for anti-infective, 
   antineoplastic and central nervous system agents.
 Deployment:
   - Local
