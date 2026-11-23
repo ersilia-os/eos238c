@@ -39,7 +39,7 @@ Source Code: https://github.com/jgmeyerucsd/drug-class
 License: GPL-3.0-only
 Contributor: Amna-28
 Incorporation Date: '2022-10-12'
-Last Packaging Date: '2026-11-06'
+Last Packaging Date: '2026-11-23'
 Release: v3.0.1
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos238c.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos238c
@@ -49,9 +49,9 @@ Docker Architecture:
 Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos238c_v3.sif
 Model Size: 277.0
 Environment Size: 6954.0
-Image Size: 3607.18
-Computational Performance 1: 44.91
-Computational Performance 2: 34.01
-Computational Performance 3: 38.17
-Computational Performance 4: 229.6
-Computational Performance 5: 1089.82
+Image Size: 3327.81
+Computational Performance 1: 38.93
+Computational Performance 2: 31.74
+Computational Performance 3: 56.45
+Computational Performance 4: 311.19
+Computational Performance 5: 1339.48
