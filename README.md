@@ -1,6 +1,6 @@
 # MeSH therapeutic use based on chemical structure
 
-Assigns a molecule to twelve broad therapeutic categories taken from the MeSH therapeutic use vocabulary, inferring likely clinical purpose straight from structure. Meyer and colleagues gathered 6955 PubChem compounds each falling in exactly one of the twelve classes, reaching 83 to 88 percent accuracy with convolutional networks on molecule images and random forests on Morgan fingerprints. Ersilia replicates the task with twelve independent binary classifiers, so several categories can score highly for one compound even though the training labels were exclusive.
+Assigns a molecule to twelve broad therapeutic categories from the MeSH therapeutic use vocabulary, inferring likely clinical purpose from structure. Meyer and colleagues gathered 6,955 PubChem compounds, each in exactly one class. Ersilia replicates the task with twelve independent LazyQSAR classifiers trained on 6,948 of them, so several categories can score highly for one compound. Five-fold out-of-fold AUROC ranges from 0.87 for urological agents, with only 26 actives, to 0.98 for anti-infective, antineoplastic and central nervous system agents.
 
 This model was incorporated on 2022-10-12.
 Last packaged on 2026-11-06.
