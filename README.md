@@ -3,7 +3,7 @@
 Assigns a molecule to twelve broad therapeutic categories from the MeSH therapeutic use vocabulary, inferring likely clinical purpose from structure. Meyer and colleagues gathered 6,955 PubChem compounds, each in exactly one class. Ersilia replicates the task with twelve independent LazyQSAR classifiers trained on 6,948 of them, so several categories can score highly for one compound. Five-fold out-of-fold AUROC ranges from 0.87 for urological agents, with only 26 actives, to 0.98 for anti-infective, antineoplastic and central nervous system agents.
 
 This model was incorporated on 2022-10-12.
-Last packaged on 2026-11-06.
+Last packaged on 2026-11-23.
 
 ## Information
 ### Identifiers
@@ -52,12 +52,12 @@ _10 of 12 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `277`
 - **Environment Size (Mb):** `6954`
-- **Image Size (Mb):** `3607.18`
+- **Image Size (Mb):** `3327.81`
 
 **Computational Performance (seconds):**
-- 10 inputs: `44.91`
-- 100 inputs: `38.17`
-- 10000 inputs: `1089.82`
+- 10 inputs: `38.93`
+- 100 inputs: `56.45`
+- 10000 inputs: `1339.48`
 
 ### References
 - **Source Code**: [https://github.com/jgmeyerucsd/drug-class](https://github.com/jgmeyerucsd/drug-class)
